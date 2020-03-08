@@ -28,7 +28,7 @@ public class BrandAdapter extends BaseAdapter {
         TextView txtTitle = (TextView) holder.getViewById(R.id.txt_title);
         TextView txtPrice = (TextView) holder.getViewById(R.id.txt_price);
 
-        Glide.with(mContext).load(bean.getNew_pic_url()).into(imgBrand);
+        Glide.with(mContext).load(bean.getPic_url()).into(imgBrand);
         txtTitle.setText(bean.getName());
         txtPrice.setText(bean.getFloor_price()+"元起");
     }

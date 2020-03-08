@@ -40,7 +40,7 @@ public class GoodListAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         MyViewHolder myViewHolder = (MyViewHolder) holder;
         String name = datas.get(position);
-        TextView txtName = (TextView) myViewHolder.getViewById(R.id.txt_item_name);
+        TextView txtName = (TextView) myViewHolder.getViewById(R.id.list_pic_url);
         txtName.setText(name);
 
     }

@@ -3,6 +3,7 @@ package com.myshop.ui.home;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -56,6 +57,7 @@ public class HomeFragment extends BaseFragment<HomeConstract.Presenter> implemen
             public void itemClick(BaseAdapter.BaseViewHolder holder, int position) {
                 //接收列表条目的接口回调
                 Toast.makeText(context, "click pos "+position, Toast.LENGTH_SHORT).show();
+
             }
         });
 
